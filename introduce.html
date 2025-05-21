@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    	body{
+    		margin: 0;
+    		background: #e6f0ff;
+    	}
+
+    	.container{
+    		width: 100vw;
+    		height: 100vh;
+
+    		display: grid;
+
+    		grid-template-columns: 1fr 1fr 1fr;
+
+    		grid-template-rows: 60px 1fr 1fr 100px;
+
+    		grid-gap: 10px;
+
+    		padding: 10px;
+
+    		box-sizing: border-box;
+    	}
+
+    	.container div{
+    		border-width: 1px;
+    		border-style: solid;
+    		border-radius: 8px;
+    		box-shadow: 0px 3px 5px;
+
+    		padding: 12px;
+
+    	}
+
+    	.header{
+    		grid-column-start: 1;
+    		grid-column-end: 4;
+    		background-color: #b3d1ff;
+    		border: 2px solid #b3d1ff;
+         text-align: center;
+         font-size: 30px;
+         font-family: Georgia, serif;
+
+         display: flex;
+         justify-content: center; /* 水平置中 */
+         align-items: center;     /* 垂直置中 */
+    	}
+
+    	.big-content{
+    		grid-column-start: 1;
+    		grid-column-end: span 2;
+    		grid-row-start: 2;
+    		grid-row-end: span 2;
+    		background-color: #dceeff;
+    		border: 2px solid #dceeff;
+
+         font-family: Georgia, serif;
+         font-size: 20px;
+    	}
+
+      .information {
+         background-color: #b0c4de;
+         display: inline-block;
+         margin: 0;
+         padding: 4px;
+         border-radius: 8px;
+         transition: background-color 0.3s ease;
+      }
+
+      .information:hover {
+         background-color: lightcoral;
+      }
+
+      .small-content1{
+         background-color: #cce0ff;
+         border: 2px solid #cce0ff;
+         font-family: Georgia, serif;
+         font-size: 20px;
+      }
+
+      .interesting{
+         background-color: #b0c4de;
+         display: inline-block;
+         margin: 0;
+         padding: 4px;
+         border-radius: 8px;
+         transition: background-color 0.3s ease;
+      }
+
+      .interesting:hover {
+         background-color: lightcoral;
+      }
+
+      .small-content2{
+         background-color: #e6f2ff;
+         border: 2px solid #e6f2ff;
+         font-family: Georgia, serif;
+         font-size: 20px;
+      }
+
+      .goal{
+         background-color: #b0c4de;
+         display: inline-block;
+         margin: 0;
+         padding: 4px;
+         border-radius: 8px;
+         transition: background-color 0.3s ease;
+      }
+
+      .goal:hover {
+         background-color: lightcoral;
+      }
+
+    	.footer{
+    		grid-column: 1 /span 3;
+    		background-color: #99ccff;
+    		border: 2px solid #99ccff;
+         font-family: Georgia, serif;
+         font-size: 20px;
+    	}
+
+      .link{
+         background-color: #b0c4de;
+         display: inline-block;
+         margin: 0;
+         padding: 4px;
+         border-radius: 8px;
+         transition: background-color 0.3s ease;
+      }
+
+      .link:hover {
+         background-color: lightcoral;
+      }
+
+
+    </style>
+
+    <title></title>
+</head>
+<body>
+   <div class="container">
+   		<div class="header">自我介紹</div>
+   		
+         <div class="big-content">
+         <p class="information"><strong>基本資料</strong></p>
+         <p>姓名：郭芷妤</p>
+         <img src="img/20110918.jpg" width="20%" height=" auto">
+         <p>班級：資圖一A</p>
+         <p>生日：2005/11/10</p>
+         <p>星座：天蠍座</p>
+         <p>MBTI：INFP</p>
+         </div>
+
+   		<div class="small-content1">
+         <p class="interesting"><strong>興趣</strong></p>
+         <ul>
+            <li>畫畫</li>
+            <li>看電影</li>
+            <li>旅行</li>
+         </ul>
+         </div>
+   		
+         <div class="small-content2"><strong></strong>
+         <p class="goal"><strong>目標</strong></p>
+         <ul>
+            <li>順利畢業</li>
+            <li>考到汽車駕照</li>
+         </ul>
+         </div>
+   		
+         <div class="footer">
+            <p class="link">其他連結</p>
+            <a href="file:///Users/caa/Documents/413000158_%E7%B6%B2%E8%B7%AF%E6%A6%82%E8%AB%96/timetable.html">課表</a>
+            <a href="file:///Users/caa/Documents/413000158_%E7%B6%B2%E8%B7%AF%E6%A6%82%E8%AB%96/song.html">歌詞</a>
+         </div>
+   </div>
+</body>
+</html>
+
